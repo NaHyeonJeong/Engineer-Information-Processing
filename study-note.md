@@ -68,7 +68,54 @@ int[][] a = { // 칸의 수가 달라도 가변 배열 지원함
 };
 ```
 ### 2차원 배열을 사용한 다양한 직각 삼각형 그리기
-
+1. 직각 삼각형 1번   
+   ![img.png](img.png)
+```java
+public static void main(String[]args){
+    int k = 1;
+    for(i = 0; i < 5; i++){
+        for(j=0;j<i; j++){
+            a[i][j]=k++;
+        }
+    }
+}
+```
+2. 직각 삼각형 2번   
+   ![img_1.png](img_1.png)
+```java
+public static void main(String[]args){
+    int k = 1;
+    for(j = (0+4)-i; j < 5; j++) {
+        for(j=0;j<i; j++){
+            a[i][j]=k++;
+        }
+    }
+}
+```
+3. 직각 삼각형 3번   
+    ![img_2.png](img_2.png)
+```java
+public static void main(String[]args){
+    int k = 1;
+    for(j = i; j < 5; j++) {
+        for(j=0;j<i; j++){
+            a[i][j]=k++;
+        }
+    }
+}
+```
+4. 직각 삼각형 4번   
+![img_3.png](img_3.png)
+```java
+public static void main(String[]args){
+    int k = 1;
+    for(j = 0; j <= (0+4)-i; j++) {
+        for(j=0;j<i; j++){
+            a[i][j]=k++;
+        }
+    }
+}
+```
 ## 문자열 String
 ### 문자열 거꾸로 출력하기💥
 ```java
